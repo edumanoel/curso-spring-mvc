@@ -43,5 +43,4 @@ public abstract class AbstractEntity <ID extends Serializable> implements Serial
 		return "id= " + id;
 	}
 	
-
 }
