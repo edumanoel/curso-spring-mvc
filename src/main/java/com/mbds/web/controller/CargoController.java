@@ -17,5 +17,4 @@ public class CargoController {
 	public String listar() {
 		return "/cargo/lista";
 	}
-
 }
