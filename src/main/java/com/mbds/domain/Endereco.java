@@ -6,26 +6,26 @@ import javax.persistence.*;
 @Entity
 @Table(name = "ENDERECOS")
 public class Endereco extends AbstractEntity<Long> {
-	
+
 	@Column(nullable = false)
 	private String logradouro;
-	
+
 	@Column(nullable = false, length = 60)
 	private String bairro;
-	
+
 	@Column(nullable = false, length = 60)
 	private String cidade;
-	
+
 	@Column(nullable = false, length = 2)
 	@Enumerated(EnumType.STRING)
 	private UF uf;
-	
+
 	@Column(nullable = false, length = 9)
 	private String cep;
-	
+
 	@Column(length = 5)
 	private Integer numero;
-	
+
 	private String complemento;
 
 	public String getLogradouro() {
@@ -83,5 +83,5 @@ public class Endereco extends AbstractEntity<Long> {
 	public void setComplemento(String complemento) {
 		this.complemento = complemento.trim();
 	}
-	
+
 }
